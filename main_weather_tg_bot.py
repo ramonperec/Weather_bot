@@ -10,7 +10,7 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands=["start"])
 async def start_command(message: types.Message):
-    await message.reply("Привт! Напиши мне название города и я пришлю сводку погоды!")
+    await message.reply("Привет! Напиши мне название города и я пришлю сводку погоды!")
 
 @dp.message_handler()
 async def get_weather(message: types.Message):
